@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Clothing Brand</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/741d6a4ece.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header id="header">
+        <a href="homepage.html"><img src="Images/QuantumLogo.png" alt="Quantum Clothing logo" class="quantum-logo"></a>
+
+        <nav id="navigation-bar">
+            <li><a href="homepage.html" class="hover-active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </nav>
+    </header>
+    <h1>Shopping Cart</h1>
+    <div id="cart"></div>
+    <button onclick="addToCart('T-shirt', 20)">Add T-shirt to Cart</button>
+    <button onclick="addToCart('Jeans', 50)">Add Jeans to Cart</button>
+    <button onclick="clearCart()">Clear Cart</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Jost&display=swap');
+
+
+/*universal styling for all elements*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: white;
+}
+
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:black;
+}
+
+h4{
+    font-size: 20px;
+    color: black;
+}
+
+h6{
+    font-weight: 700; 
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+
+/*Styling for homepage.hmtl*/
+.quantum-logo{
+    width: 100%;
+    height: 70px;
+}
+
+.quantum-logo-1{
+    width: 100px;
+    height: 80  px;
+    margin-bottom: 30px;
+    padding-right: 40px;
+}
+
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: lightgray;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navigation-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation-bar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navigation-bar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    transition: 0.4s ease;
+}
+
+#navigation-bar li a:hover{
+    color: rgb(71, 119, 61);
+}
+
+#navigation-bar li a.hover-active{
+    color: rgb(71, 119, 61);
+}
+
+#navigation-bar li a.hover-active::after,
+#navigation-bar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: rgb(71, 119, 61);
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#content{
+    background-image: url(Images/joyful-black-woman-having-fun-studio-pink-background-white-t-shirt-green-jacket-stylish-spring-look.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#content a{
+    text-decoration: none;
+    color: black;
+}
+
+#content h4{
+    padding-bottom: 15px;
+}
+
+#content h1{
+    color: black;
+}
+
+#content button{
+    background-image: url(Images/button.png);
+    background-color: transparent;
+    color: black;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+
+}
+
+#quantum-features .box-container{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#quantum-features .box-container:hover{
+    box-shadow: 10px 10px 54px rgba(70, 62,221,0.1);
+}
+
+#quantum-features .box-container img{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#quantum-features .box-container h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #efddcf;
+
+}
+
+#quantum-features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#quantum-features .box-container:nth-child(2) h6{
+    background-color:#ccd8d2;
+}
+
+#quantum-features .box-container:nth-child(3) h6{
+    background-color:#c6f8e5;
+}
+
+#quantum-features .box-container:nth-child(4) h6{
+    background-color:#f6e0b5;
+}
+
+#site-reviews{
+    text-align: center;
+}
+
+#site-reviews .reviews-container{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    transition: 0.3s ease;
+}
+
+#site-reviews .reviews-container:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#site-reviews .reviews-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/*styling for footer for all pages*/
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .column-features{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+
+footer h4{
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 15px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer a:hover{
+    color: #088178;
+}
+
+
+/*Styling for shop.html page*/
+
+#banner{
+    background-image: url(Images/Banner.jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+
+}
+
+#banner p{
+    color: white;
+}
+
+#banner h2{
+    color: white;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px; /* Padding between products */
+    box-sizing: border-box; /* Include padding in container width */
+}
+
+/* Flexbox styling for product card */
+.product-card {
+    border: 1px solid #ccc; /* Add border around each product card */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    max-width: 300px;
+}
+.product-card img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.product-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-card form label {
+    margin-bottom: 5px;
+}
+
+.product-card form select,
+.product-card form input[type="number"] {
+    margin-bottom: 10px;
+}
+
+.product-card form button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.product-card form button:hover {
+    background-color: #0056b3;
+}
